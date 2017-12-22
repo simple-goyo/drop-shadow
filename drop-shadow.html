@@ -1,0 +1,17 @@
+﻿<html>
+<body>
+<p><strong>修改图标</strong></p>
+<i class="icon"><img class="icon" src="http://www.easyicon.net/api/resizeApi.php?id=1121153&size=128" id="changeIcon"></i>
+<input type="color" id="color"/>
+<script>
+    document.getElementById("color").onchange = function(){
+        var imgWidth=document.getElementById("changeIcon").width;
+        var imgHeight=document.getElementById("changeIcon").height;
+        document.getElementById("changeIcon").style.position ="relative";
+        document.getElementById("changeIcon").style.left ="-"+imgWidth+"px";
+        document.getElementById("changeIcon").style.filter ="drop-shadow("+imgWidth+"px 0 "+this.value+")"
+    }
+
+</script>
+</body>
+</html>
